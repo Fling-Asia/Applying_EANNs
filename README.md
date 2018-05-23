@@ -1,10 +1,11 @@
-# Applying Evolutionary Artificial Neural Networks to a Drone Traffic Simulation
+## Applying Evolutionary Artificial Neural Networks to a Drone Traffic Simulation
 
 Based on https://github.com/ArztSamuel/Applying_EANNs.
 
 We create simplified drone-like sprites in a simulated environment.  The “drones” have a LiDAR-like view of their distance away from the nearest obstacle along a finite number of fixed lines of sight.  The drones can move by changing the amount of thrust on their “propellers”.
 
 The drones autonomously control their behaviour via a feedforward neural network.  The weights of the network are trained using a genetic algorithm.
+
 
 ![](Images/Demo.gif)
 
