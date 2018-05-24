@@ -3,6 +3,7 @@
 
 #region Includes
 using System;
+using System.IO;
 #endregion
 
 /// <summary>
@@ -10,6 +11,8 @@ using System;
 /// </summary>
 public class NeuralLayer
 {
+    
+
     #region Members
     private static Random randomizer = new Random();
 
@@ -55,6 +58,9 @@ public class NeuralLayer
         private set;
     }
     #endregion
+
+    public static string weights_revised = "still tring to find how to load non static variable!";
+
 
     #region Constructors
     /// <summary>
@@ -147,6 +153,7 @@ public class NeuralLayer
         NeuralLayer newLayer = new NeuralLayer(this.NeuronCount, this.OutputCount);
         newLayer.Weights = copiedWeights;
         newLayer.NeuronActivationFunction = this.NeuronActivationFunction;
+        weights_revised = "The file ran deep copy!";
 
         return newLayer;
     }
